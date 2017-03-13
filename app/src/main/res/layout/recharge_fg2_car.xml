@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="您当前的余额为： "
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_yuer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv23"
+            android:layout_toRightOf="@id/tv23"
+            android:text="0.00"
+            android:textColor="#ff6600"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_yuer"
+            android:layout_toRightOf="@id/tv_yuer"
+            android:text=" 元"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_carcount"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/tv23"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/product_shape_white">
+
+            <TextView
+                android:id="@+id/tv_card_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="充值卡号"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_cardnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tv_card_count"
+                android:background="@null"
+                android:hint="请输入12位纯数字卡号"
+                android:inputType="number"
+                android:textColorHint="#bbbbbb"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cardpsw"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/rl_carcount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/product_shape_white">
+
+            <TextView
+                android:id="@+id/tv_card_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="充值密码"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tv_card_psw"
+                android:background="@null"
+                android:hint="请输入8位充值卡密码"
+                android:inputType="number"
+                android:textColorHint="#bbbbbb"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_charge"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/rl_cardpsw"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_envy"
+            android:text="确认充值"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</ScrollView>

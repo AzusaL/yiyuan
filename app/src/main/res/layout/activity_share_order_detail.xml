@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_shaidandetail"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar_bg_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/return_shaidandetail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/button_left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="晒单详情"
+            android:textColor="#555555"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sharedetailbottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_like"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/shaidan_envy"
+                android:drawablePadding="4.0dip"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="10.0dip"
+                android:textColor="#888888"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tv_like_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="+1"
+                android:textColor="#ffff0000"
+                android:textSize="@dimen/text_small"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_comment"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/shaidan_comment"
+                android:drawablePadding="4.0dip"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="10.0dip"
+                android:textColor="#888888"
+                android:textSize="@dimen/text_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_share"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingBottom="8.0dip"
+            android:paddingTop="8.0dip">
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:src="@drawable/shaidan_share" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.team.azusa.yiyuan.widget.PulluptoRefreshListview
+        android:id="@+id/lv_sharedetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_sharedetailbottom"
+        android:layout_below="@id/title_shaidandetail"
+        android:divider="#dddddd"
+        android:dividerHeight="0.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/ll_sharedetailbottom"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/edit_comment_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd" />
+
+        <LinearLayout
+            android:id="@+id/rlsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_sentcomment"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_envy"
+                android:text="发送"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_textlimi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:text="-255"
+                android:singleLine="true"
+                android:textColor="#ff0000"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edit_commentcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/rlsent"
+            android:background="@drawable/search_bg_stroke"
+            android:hint="说两句吧"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#555555"
+            android:textColorHint="#cccccc"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

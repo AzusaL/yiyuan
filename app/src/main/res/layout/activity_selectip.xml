@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/editip"
+        style="@style/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editip">
+
+        <RadioButton
+            android:id="@+id/tvip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="http://119.29.169.42" />
+
+        <RadioButton
+            android:id="@+id/tvip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvip1"
+            android:layout_margin="16dp"
+            android:text="http://115.29.112.36" />
+
+        <RadioButton
+            android:id="@+id/tvip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvip2"
+            android:layout_margin="16dp"
+            android:text="http://192.168.1.110:8080" />
+
+        <RadioButton
+            android:id="@+id/tvip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvip3"
+            android:layout_margin="16dp"
+            android:text="http://charles95.cn" />
+
+        <RadioButton
+            android:id="@+id/tvip5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvip4"
+            android:layout_margin="16dp"
+            android:text="http://183.35.233.73:8080" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_envy"
+        android:text="确认"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_white2gray_sel">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/product_shape">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_rv_car"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                fresco:actualImageScaleType="focusCrop" />
+
+            <ImageView
+                android:id="@+id/car_limibg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/label_limit"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/rl"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_car_yunnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(第6868云)"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_cartitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="苹果(Apple)iMac MK142CH/A 21.5英寸一体电脑"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/goodscar_renshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="剩余95人次/限购5人次"
+                    android:textColor="#aaaaaa"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/car_jointimes_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_ci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="参与人次"
+                    android:textColor="#aaaaaa"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/joincount_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_ci"
+                    android:background="@drawable/product_click_sel"
+                    android:text="3"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_totalyuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/joincount_btn"
+                    android:text="3.00元"
+                    android:textColor="#ff6600"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/goodscar_deletebtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_white2gray_sel"
+                    android:clickable="true"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/cart_delete_icon" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

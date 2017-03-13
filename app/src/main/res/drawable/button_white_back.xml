@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+	    android:state_pressed="true"
+	    android:drawable="@drawable/bg_top_bar"
+	    ></item>
+    <item android:drawable="@drawable/home_annouced_top_right"></item>
+	
+</selector>

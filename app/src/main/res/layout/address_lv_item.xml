@@ -1,0 +1,86 @@
+<com.daimajia.swipe.SwipeLayout
+    android:id="@+id/example"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Bottom View Start-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:background="#66ddff00"
+        android:gravity="center_vertical"
+        android:weightSum="0.5">
+        <!--What you want to show in menu-->
+        <Button
+            android:id="@+id/bt_default_addr"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bt_orange_sel"
+            android:text="设为收货地址"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+        <ImageButton
+            android:id="@+id/bt_delete_addr"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gray2deepgray_sel"
+            android:src="@drawable/delete_up"
+            android:text="删除"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <!-- Bottom View End-->
+
+    <!-- Surface View Start -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/bg_white2gray_sel">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_address_userinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#888888"
+                android:text="罗还接 15797978582"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/tv_lv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingRight="50dp"
+                android:text="广东省 惠州市 惠城区 河南岸街道 演达大道46号惠州学院"
+                android:textColor="#989898"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_address_select"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@color/alpha_white"
+            android:src="@drawable/screening_select"
+            android:visibility="gone"/>
+
+        <!--What you want to show in SurfaceView-->
+    </RelativeLayout>
+    <!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>

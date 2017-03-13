@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="2dp"
+        android:background="@drawable/strokewhite_shape_ret"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <View
+                android:id="@+id/sdk2_pwd_one_img"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dot_shape"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <View
+                android:id="@+id/sdk2_pwd_two_img"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dot_shape"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <View
+                android:id="@+id/sdk2_pwd_three_img"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dot_shape"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <View
+                android:id="@+id/sdk2_pwd_four_img"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dot_shape"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <View
+                android:id="@+id/sdk2_pwd_five_img"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dot_shape"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <View
+                android:id="@+id/sdk2_pwd_six_img"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dot_shape"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/sdk2_pwd_edit_simple"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="6" />
+
+</RelativeLayout>

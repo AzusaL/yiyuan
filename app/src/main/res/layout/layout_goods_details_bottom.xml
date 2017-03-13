@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height_large"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_stroke_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8.0dip" >
+
+        <Button
+            android:id="@+id/btn_go_shopping"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_go_shopping"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/go_shopping"
+            android:textColor="#FFFFFF"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_add_to_cart"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/add_to_cart"
+            android:textColor="#FFFFFF"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/btn_shopping_Calculation"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_go_shopping"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="第xxx云(正在进行中...)"
+            android:textColor="#FFFFFF"
+            android:textSize="18.0sp" />
+        <RelativeLayout
+            android:id="@+id/layout_cart"
+            android:layout_width="41.0dip"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent" >
+
+            <ImageView
+                android:id="@+id/imgv_goods_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cart_normal" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_cart_count"-->
+                <!--android:layout_width="16.0dip"-->
+                <!--android:layout_height="16.0dip"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_margin="2.0dip"-->
+                <!--android:background="@drawable/cart_count_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="8.0sp" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_bottom2"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="@dimen/button_height_large"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@drawable/top_stroke_bg"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="8.0dip"-->
+        <!--android:visibility="gone"-->
+        <!-->-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_shopping_Calculation"-->
+            <!--android:layout_width="0.0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="4.0dip"-->
+            <!--android:layout_marginTop="4.0dip"-->
+            <!--android:layout_weight="1.0"-->
+            <!--android:background="@drawable/button_go_shopping"-->
+            <!--android:gravity="center"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="第xxx云(正在进行中...)"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="18.0sp" />-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/layout_cart2"-->
+            <!--android:layout_width="41.0dip"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:background="@android:color/transparent" >-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgv_goods_cart2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/cart_normal" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_cart_count2"-->
+                <!--android:layout_width="16.0dip"-->
+                <!--android:layout_height="16.0dip"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_margin="2.0dip"-->
+                <!--android:background="@drawable/cart_count_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="8.0sp" />-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

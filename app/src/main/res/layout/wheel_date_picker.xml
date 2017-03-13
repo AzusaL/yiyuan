@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/white">
+
+        <Button
+            android:clickable="true"
+            android:id="@+id/date_edit_cancel"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/product_winner_color_sel"
+            android:textSize="16sp"/>
+
+        <Button
+            android:clickable="true"
+            android:id="@+id/date_edit_ensure"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/product_winner_color_sel"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.team.azusa.yiyuan.wheelview.WheelView
+            android:id="@+id/year"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <com.team.azusa.yiyuan.wheelview.WheelView
+            android:id="@+id/month"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <com.team.azusa.yiyuan.wheelview.WheelView
+            android:id="@+id/day"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

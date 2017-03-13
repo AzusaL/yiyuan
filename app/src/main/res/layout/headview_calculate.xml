@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9600">
+
+        <TextView
+            android:id="@+id/tv_jxtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="10dp"
+            android:text="截止揭晓时间【2016-03-31 11:55:55.805】"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_jilucount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jxtime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="最后100条全站购买记录"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

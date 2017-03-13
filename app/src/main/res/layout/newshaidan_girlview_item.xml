@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <View
+        android:id="@+id/addview"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/add_photo" />
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/newshaidan_itemImage"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        fresco:actualImageScaleType="focusCrop" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/newshaidan_itemImage"
+        android:layout_margin="4dp"
+        android:background="@drawable/delete_btn" />
+
+</RelativeLayout>

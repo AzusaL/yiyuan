@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <LinearLayout
+        android:id="@+id/image_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tupian_detaile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/product_shape_white"
+            android:gravity="center">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/touxiang"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                fresco:actualImageScaleType="focusCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tupian_detaile"
+            android:layout_marginRight="8.0dip"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="8.0dip">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/result_avatar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8.0dip"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:roundAsCircle="true"
+                    fresco:roundingBorderColor="#ff7700"
+                    fresco:failureImage="@drawable/touxiang"
+                    fresco:roundingBorderWidth="1dp" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/result_avatar">
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/horizontal_margin_normal"
+                        android:focusable="false"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:text="机主伤势过重"
+                        android:textColor="#0099ff"
+                        android:textSize="@dimen/text_large" />
+
+                    <TextView
+                        android:id="@+id/tv_shaidan_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_nickname"
+                        android:layout_marginTop="2.0dip"
+                        android:gravity="bottom"
+                        android:singleLine="true"
+                        android:text="客户地点"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/text_medium" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/tv_shaidan_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/goods_gainer_indicator" />
+                <!--<ImageView-->
+                <!--android:id="@+id/tv_shaidan_time"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/goods_gainer_indicator"-->
+                <!--android:layout_toRightOf="@id/RelativeLayout_TextView"-->
+                <!--/>-->
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/stroke"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:background="@color/stroke" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip">
+
+                <RelativeLayout
+                    android:id="@+id/time_RelativeLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:text="揭晓时间:"
+                        android:textColor="#aaaaaa"
+                        android:textSize="13.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv"
+                        android:singleLine="true"
+                        android:text="2016-01-21 10:10:10.777"
+                        android:textColor="#aaaaaa"
+                        android:textSize="13.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_time"
+                        android:layout_marginTop="2.0dip"
+                        android:gravity="bottom"
+                        android:singleLine="true"
+                        android:text="云购时间:"
+                        android:textColor="#aaaaaa"
+                        android:textSize="13.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv2"
+                        android:layout_toRightOf="@id/tv2"
+                        android:singleLine="true"
+                        android:text="2016-01-21 10:10:10.777"
+                        android:textColor="#aaaaaa"
+                        android:textSize="13.0sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

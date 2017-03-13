@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#50eeeeee">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/share_img_head"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:roundAsCircle="true"
+            fresco:roundingBorderColor="#ff7700"
+            fresco:roundingBorderWidth="2dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dddddd" />
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="34dp"
+            android:background="@drawable/sort_arrows" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/share_img_head">
+
+            <TextView
+                android:id="@+id/tv_shareusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="坚持限购中手机"
+                android:textColor="@color/product_winner_color_sel"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_shareproductname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_shareusername"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="(第895云)罗技（Logitech）M238无线鼠标"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/award_flag"
+            android:gravity="top|center_horizontal"
+            android:lines="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="奖励福分1000"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_sharetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="中了个Iphon 6s Plus !"
+        android:textColor="#555555"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_sharetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="今天 10:22"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_sharecontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="经常云购几块几块的下，没想到真中了心情无比激动，最贵的“玩具”后来才知道这个不是玩具，属于摄影器材了呵呵！还没飞！物流给力，云购客服服务态度很好！只不过这个东东电池相当昂贵哟不舍得买，希望云购弄些电池云购哈哈，谢谢这云一起购的云友及云购！"
+        android:textColor="#888888"
+        android:textSize="16sp" />
+
+    <com.team.azusa.yiyuan.widget.WrapHeightGridView
+        android:id="@+id/gv_shareimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#90eeeeee" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_commentcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:text="评论 18"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#90eeeeee" />
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.team.azusa.yiyuan.widget.PulluptoRefreshListview
+        android:id="@+id/allgoods_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:dividerHeight="0.5dp" />
+
+    <LinearLayout
+        android:id="@+id/fg2_topll"
+        android:layout_width="match_parent"
+        android:layout_height="90.5dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_bar_bg_white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="所有商品"
+                android:textColor="#555555"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/search_orange"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button_title_search2"
+                android:contentDescription="@null" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/fg2_topbar_typerl"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray2moregray_sel">
+
+                <TextView
+                    android:id="@+id/sort_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="全部分类"
+                    android:textColor="@color/txt_light_gray"
+                    android:textSize="@dimen/bodyfont_16" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_alignBottom="@+id/sort_tv1"
+                    android:layout_toEndOf="@+id/sort_tv1"
+                    android:layout_toRightOf="@+id/sort_tv1"
+                    android:background="@drawable/title_right_indicator_white" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="44dp"
+                android:background="#dddddd" />
+
+            <RelativeLayout
+                android:id="@+id/fg2_topbar_publicrl"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray2moregray_sel">
+
+                <TextView
+                    android:id="@+id/sort_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="人气"
+                    android:textColor="@color/txt_light_gray"
+                    android:textSize="@dimen/bodyfont_16" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_alignBottom="@+id/sort_tv2"
+                    android:layout_toEndOf="@+id/sort_tv2"
+                    android:layout_toRightOf="@+id/sort_tv2"
+                    android:background="@drawable/title_right_indicator_white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dddddd" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/sort_arrow2"
+        android:layout_width="18dp"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/fg2_topll"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="84dp"
+        android:background="@drawable/sort_arrows"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/sort_arrow"
+        android:layout_width="18dp"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/fg2_topll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginStart="84dp"
+        android:background="@drawable/sort_arrows"
+        android:visibility="gone" />
+</RelativeLayout>

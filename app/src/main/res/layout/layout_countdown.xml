@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_top_bar"
+        android:id="@+id/Countdown"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/goods_countdown"
+            android:gravity="center"
+            android:text="揭晓倒计时："
+            android:textColor="#0099ff"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp" />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/cv_countdownView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            app:isHideTimeBackground="false"
+            app:isShowDay="false"
+            android:textAlignment="center"
+            app:isShowHour="false"
+            app:isShowMillisecond="true"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:suffixGravity="center"
+            app:suffixTextSize="30sp"
+            app:isShowTimeBgDivisionLine="false"
+            app:timeBgSize="50dp"
+            app:timeTextSize="30sp"
+            app:timeBgColor="#0099ff"
+            app:timeBgRadius="4dp"
+            app:timeTextColor="#FFFFFF"
+            app:suffixTextColor="#0099ff"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Calculating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_calculating"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/subtheme_bottom_stroke"
+            android:paddingBottom="16.0dip"
+            android:paddingTop="16.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="正在计算中，结果马上揭晓......"
+                    android:textSize="@dimen/text_medium" />
+
+                <ProgressBar
+                    android:id="@+id/pgb_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="8.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:background="@drawable/progress_round_bg"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/goods_progress_indeterminate_horizontal" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

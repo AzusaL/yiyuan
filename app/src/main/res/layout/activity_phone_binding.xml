@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team.azusa.yiyuan.yiyuan_activity.PhoneBindingActivity">
+
+    <RelativeLayout
+        android:id="@+id/phone_binding"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar_bg_white">
+        <ImageView
+            android:id="@+id/phone_binding_go_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/button_left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="绑定手机"
+            android:textColor="#555555"
+            android:textSize="20sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dddddd"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/phone_binding"
+        android:layout_marginTop="5dp"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="验证手机号:"
+                android:textColor="#777777"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15766950916"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/et_verification_code"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="2"
+                android:background="@drawable/login_layoutshape"
+                android:hint="请输入6位验证码"
+                android:textColorHint="#AAAAAA"
+                android:textSize="14sp"
+                android:maxLength="20"
+                android:minLines="8"
+                />
+            <Button
+                android:id="@+id/phone_binding_get_ver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="获取验证码"
+                android:background="@drawable/button_envy"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/phone_binding_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_envy_noenable"
+            android:clickable="false"
+            android:text="确认"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="换了手机号或遗失?请致电客服申述解除绑定4000-588-688"
+            android:textColor="#777777"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

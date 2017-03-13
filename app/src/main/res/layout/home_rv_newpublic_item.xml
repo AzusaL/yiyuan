@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fresco="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:background="@drawable/bg_white2gray_sel"
+                android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp">
+
+        <View
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/product_shape_white"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fg1_newpublic_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            fresco:actualImageScaleType="focusCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/fg1_newpublic_img">
+
+            <TextView
+                android:id="@+id/fg1_newpublic_tvname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="九阳 （jiuyang） 豆浆机，值得拥有..."
+                android:textColor="#555555"
+                android:textSize="12sp"/>
+
+            <cn.iwgang.countdownview.CountdownView
+                android:id="@+id/cv_countdownView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fg1_newpublic_tvname"
+                android:layout_marginTop="8dp"
+                app:isShowDay="false"
+                app:isShowHour="false"
+                app:isShowMillisecond="true"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:suffixGravity="center"
+                app:suffixTextSize="13sp"
+                app:timeBgDivisionLineSize="1dp"
+                app:timeBgSize="8dp"
+                app:timeTextColor="#ff7700"
+                app:timeTextSize="13sp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

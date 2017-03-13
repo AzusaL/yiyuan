@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#50eeeeee"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <RelativeLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp">
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/one" />
+
+            <ProgressBar
+                android:id="@+id/pull_to_refresh_load_progress"
+                style="@style/MYProgressBarStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/pull_to_refresh_loadmore_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:text="下拉刷新"
+                android:textColor="#777777"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/recenttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pull_to_refresh_loadmore_text"
+                android:text="上次更新:2015-12-26 13:29:10"
+                android:textColor="#aaaaaa" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

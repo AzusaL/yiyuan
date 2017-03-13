@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95eeeeee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/about_logo_white"
+            android:contentDescription="@null"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/title_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_title_search"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/ptrpulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="500"
+        cube_ptr:ptr_duration_to_close_header="500"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.8">
+
+        <ScrollView
+            android:id="@+id/homescrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.team.azusa.yiyuan.widget.FlashView
+                        android:id="@+id/flash_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="176dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/home_annouced_bottom_right"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/new_recommend"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/button_new_recommend"
+                            android:contentDescription="@null"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="新品"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/nav_shaidan"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/button_nav_shaidan"
+                            android:contentDescription="@null"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="晒单"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/nav_map"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/button_nav_shopingrecord"
+                            android:contentDescription="@null"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="云购记录"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/nav_recharge"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/button_nav_recharge"
+                            android:contentDescription="@null"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="充值"
+                            android:textColor="#777777"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/home_rl_newpublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_white2gray_sel">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="最新揭晓"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/bodyfont_18" />
+
+                    <Button
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/gray_arrows" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#ff9900" />
+
+                <com.team.azusa.yiyuan.widget.WrapScrollRview
+                    android:id="@+id/recyclerview_newpublic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="148dp"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#ff9900" />
+
+                <RelativeLayout
+                    android:id="@+id/home_rl_popularity"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/home_annouced_bottom_right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="人气推荐"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/bodyfont_18" />
+
+                    <Button
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/gray_arrows" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_popularity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dddddd" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#00000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#ffffff" />
+
+                        <ImageView
+                            android:id="@+id/click_xiangou"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:background="#ffffff"
+                            android:src="@drawable/xiangouimg" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#dddddd" />
+
+                        <ImageView
+                            android:id="@+id/click_jiadian"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:src="@drawable/jiadianimg" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="#dddddd" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/click_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:src="@drawable/phoneimg" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#dddddd" />
+
+                        <ImageView
+                            android:id="@+id/click_gold"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:src="@drawable/goldimg" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#dddddd" />
+
+                        <ImageView
+                            android:id="@+id/click_car"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#ffffff"
+                            android:src="@drawable/carimg" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dddddd" />
+
+                <RelativeLayout
+                    android:id="@+id/home_shaidan"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_white2gray_sel">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="晒单分享"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/bodyfont_18" />
+
+                    <Button
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/gray_arrows" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/img_shaidan1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:background="#cccccc"
+                            fresco:actualImageScaleType="focusCrop" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#50555555" />
+
+                        <TextView
+                            android:id="@+id/tv_shaidan_title1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="2dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="中奖了"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/img_shaidan2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:background="#ccffff"
+                                fresco:actualImageScaleType="focusCrop" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="24dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="#50555555" />
+
+                            <TextView
+                                android:id="@+id/tv_shaidan_title2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="2dp"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="中奖了"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <com.facebook.drawee.view.SimpleDraweeView
+                                android:id="@+id/img_shaidan3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:background="#ccffff"
+                                fresco:actualImageScaleType="focusCrop" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="24dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="#50555555" />
+
+                            <TextView
+                                android:id="@+id/tv_shaidan_title3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="2dp"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="中奖了"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+</LinearLayout>

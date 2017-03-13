@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialog_choose_addr_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_shape_top"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#666666"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/lv_choose_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_choose_addr_title"
+        android:background="@drawable/dialog_shape_bottom"
+        android:divider="#eeeeee"
+        android:dividerHeight="1dp"
+        android:scrollbars="none">
+    </ListView>
+
+    <View
+        android:layout_below="@id/lv_choose_addr"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/dialog_shape_bottom"/>
+
+
+</RelativeLayout>

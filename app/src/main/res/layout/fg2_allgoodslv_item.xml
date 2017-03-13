@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/product_shape">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_lv_allgoods"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                fresco:actualImageScaleType="focusCrop" />
+            <!--fresco:fadeDuration="300"-->
+            <!--fresco:failureImage="@drawable/chat_warning"-->
+            <!--fresco:placeholderImage="@drawable/account_pic_default"-->
+            <!--<View-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:background="@drawable/product_shape" />-->
+
+            <ImageView
+                android:id="@+id/fg2_limibg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/label_limit"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/rl"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingTop="1dp">
+
+            <TextView
+                android:id="@+id/fg2_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginRight="16dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="(第9624云)小米(MIUI)红米Note3 32GB 4G手机 高配版"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价值:￥"
+                    android:textColor="#aaaaaa"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/fg2_product_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#aaaaaa"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/fg2_addtocar"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/add_to_cart_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/fg2_addtocar"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <ProgressBar
+                            android:id="@+id/fg2_product_pb"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_centerInParent="true"
+                            android:progressDrawable="@drawable/progressbar_color" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/fg2_product_joinedcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23"
+                            android:textColor="#ff7700"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/fg2_product_allcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="1000"
+                            android:textColor="#bbbbbb"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/fg2_product_remaincount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="3"
+                            android:textColor="@color/product_winner_color_sel"
+                            android:textSize="11sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已参与"
+                            android:textColor="#bbbbbb"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="总需人数"
+                            android:textColor="#bbbbbb"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="剩余"
+                            android:textColor="#bbbbbb"
+                            android:textSize="11sp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

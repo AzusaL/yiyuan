@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#95eeeeee"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/id_tab_home"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_home_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/home_select" />
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textColor="#FF7F24"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_all_goods"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_all_goods_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/allgoods" />
+
+        <TextView
+            android:id="@+id/text_all_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所有商品"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_newest"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_newest_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/newest" />
+
+        <TextView
+            android:id="@+id/text_newest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新揭晓"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_cart"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_cart_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/text_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_me"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_me_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/me" />
+
+        <TextView
+            android:id="@+id/text_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的云购"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

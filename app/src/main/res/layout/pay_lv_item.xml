@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/product_shape" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_product"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            fresco:actualImageScaleType="focusCrop" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="1人次/￥1.00"
+            android:textColor="#ff7700"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/tv_count"
+            android:layout_toRightOf="@id/view"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="(第19225云)小米（MIUI）红米Note3"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/title_vcard"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_bar_bg_white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/return_vcard"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/button_left_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="个人名片"
+                android:textColor="#555555"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_vcard"
+            android:background="#99eeeeee">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_userhead"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_userhead"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="AzusaL"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_userphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:text="15762635444"
+                    android:textColor="#888888"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_fgx"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/rl_head"
+            android:background="#dddddd" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sex"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/view_fgx">
+
+            <TextView
+                android:id="@+id/text_sex"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="性 别"
+                android:textColor="#888888"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text_sex"
+                android:text="男"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#dddddd" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_jinyan"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/rl_sex">
+
+            <TextView
+                android:id="@+id/text_jinyan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="经 验 值"
+                android:textColor="#888888"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_jinyan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text_jinyan"
+                android:text="40"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#dddddd" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dengji"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/rl_jinyan">
+
+            <TextView
+                android:id="@+id/text_dengji"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="等 级"
+                android:textColor="#888888"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_dengji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text_dengji"
+                android:text="云购小将"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#dddddd" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/rl_dengji">
+
+            <TextView
+                android:id="@+id/text_sign"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="个 性 签 名"
+                android:textColor="#888888"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/text_sign"
+                android:text="What The Fuck?"
+                android:textColor="#666666"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginRight="32dp"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#dddddd" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

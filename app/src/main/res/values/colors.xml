@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="alpha_white">#49ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff403c</color>
+    <color name="geek_green">#35b558</color>
+
+    <color name="primary_dark">#5d4037</color>
+    <color name="primary">#795548</color>
+    <color name="primary_light">#d7ccc8</color>
+    <color name="orange">#ff8200</color>
+    <color name="orange_alpha">#66ff8200</color>
+    <color name="orange_dark">#d46303</color>
+    <color name="bg_blue_pressed">#CCFFFF</color>
+
+
+    <color name="txt_black">#232323</color>
+    <color name="txt_light_gray">#898989</color>
+
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="deepbg_gray">#50eeeeee</color>
+    <color name="bg_gray_dark">#cdcdcd</color>
+    <color name="bg_agray">#49dddddd</color>
+    <color name="bg_gray_pressed">#e8e8e8</color>
+    <color name="txt_at_blue">#507daf</color>
+    <color name="bg_gray_bar">#f9f9f9</color>
+    <color name="bt_gray_normal">#dddddd</color>
+    <color name="bt_gray_pressed">#bbbbbb</color>
+    <color name="tabcolor">#666666</color>
+    <color name="tabcolor_select">#ff6600</color>
+
+    <!--lgy-->
+    <color name="white_text">#ffffffff</color>
+    <color name="background">#fff7f7f7</color>
+    <color name="main_background">#ffffffff</color>
+    <color name="black_text">#ff666666</color>
+    <color name="click_bg_color">#ffe6e6e6</color>
+    <color name="stroke">#ffdedede</color>
+    <color name="blue_text">#0099ff</color>
+    <color name="link_text">#ff49b8ff</color>
+    <color name="declare_text">#ffbbbbbb</color>
+    <color name="gray_text">#ff999999</color>
+    <color name="setting_background">#fff4f4f4</color>
+
+    <color name="tips_text">#ffdddddd</color>
+    <color name="signature_text">#ffbbbbbb</color>
+
+
+</resources>

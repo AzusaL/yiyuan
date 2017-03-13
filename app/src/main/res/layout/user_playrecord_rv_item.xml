@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/bg_white2gray_sel"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/product_shape">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img_rv_playrcord"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                fresco:actualImageScaleType="focusCrop" />
+
+            <ImageView
+                android:id="@+id/usermsg_imgbg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/label_announced"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/rl"
+            android:layout_toRightOf="@+id/rl">
+
+            <TextView
+                android:id="@+id/tv_lv_mygainedgoods_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="(第1234云)苹果（Apple）iphon 6s plus 64G版 4G手机"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/status0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_lv_mygainedgoods_product"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <ProgressBar
+                        android:id="@+id/fg2_product_pb"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_centerInParent="true"
+                        android:progressDrawable="@drawable/progressbar_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/fg2_product_joinedcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23"
+                        android:textColor="#ff7700"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/fg2_product_allcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="1000"
+                        android:textColor="#bbbbbb"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/fg2_product_remaincount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="3"
+                        android:textColor="@color/product_winner_color_sel"
+                        android:textSize="11sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已参与"
+                        android:textColor="#bbbbbb"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="总需人数"
+                        android:textColor="#bbbbbb"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="剩余"
+                        android:textColor="#bbbbbb"
+                        android:textSize="11sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/status2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_lv_mygainedgoods_product"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/playrecord_winner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="获奖者："
+                    android:textColor="#989898"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_lv_winnername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/playrecord_winner"
+                    android:clickable="true"
+                    android:text="马赛克Sir"
+                    android:textColor="@color/product_winner_color_sel"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_lv_mybuyrecord_winTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/playrecord_winner"
+                    android:layout_marginTop="2dp"
+                    android:text="幸运云购码: "
+                    android:textColor="#989898"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_luckcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_lv_mybuyrecord_winTime"
+                    android:layout_alignBottom="@+id/tv_lv_mybuyrecord_winTime"
+                    android:layout_toEndOf="@+id/tv_lv_mybuyrecord_winTime"
+                    android:layout_toRightOf="@+id/tv_lv_mybuyrecord_winTime"
+                    android:text="123456"
+                    android:textColor="#ff7700"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

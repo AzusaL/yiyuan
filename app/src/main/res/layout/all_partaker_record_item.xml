@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100.0dip"
+    android:descendantFocusability="blocksDescendants">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/all_partaker_record"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderColor="#eeeeee"
+        fresco:roundingBorderWidth="2dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/all_partaker_record"
+        android:layout_toRightOf="@id/all_partaker_record">
+
+        <TextView
+            android:id="@+id/all_partaker_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="大名"
+            android:textColor="@color/link_text"
+            android:textSize="@dimen/text_medium" />
+
+        <TextView
+            android:id="@+id/tv_partaker_productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/declare_text"
+            android:layout_toRightOf="@id/all_partaker_user_name"
+            android:singleLine="true"
+            android:text="()"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_medium" />
+
+        <TextView
+            android:id="@+id/partaker_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all_partaker_user_name"
+            android:layout_marginTop="2dp"
+            android:text="参与了xx人次"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_lv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/partaker_number"
+            android:layout_marginTop="2dp"
+            android:inputType="time"
+            android:text="2016-01-20 16:30:30:300"
+            android:textSize="14.0sp"
+            android:textColor="@color/gray_text" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

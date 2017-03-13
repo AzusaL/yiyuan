@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:state_pressed="true" >
+        <shape>
+            <!-- 1填充-->
+            <solid android:color="@color/bg_gray_pressed"/>
+            <!-- 描边 -->
+            <stroke
+                android:width="0.5dp"
+                android:color="#DEDEDE"/>
+        </shape>
+    </item>
+    <item >
+        <shape>
+            <!-- 填充-->
+            <solid android:color="@color/white"/>
+            <!-- 描边 -->
+            <stroke
+                android:width="0.5dp"
+                android:color="#DEDEDE"/>
+        </shape>
+    </item>
+
+</selector>

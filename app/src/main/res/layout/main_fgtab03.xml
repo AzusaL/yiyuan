@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fgtab_three_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar_bg_white"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/jiexiao_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/newsfragment_part1_sel"
+                android:button="@null"
+                android:checked="true"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp"
+                android:text="揭晓中"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/jiexiao_ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/newsfragment_part2_sel"
+                android:button="@null"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="6dp"
+                android:text="已揭晓"
+                android:textColor="#888888"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/newpublic_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+    <com.team.azusa.yiyuan.widget.PulluptoRefreshListview
+        android:id="@+id/newpublic_ed_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:visibility="gone"/>
+</LinearLayout>

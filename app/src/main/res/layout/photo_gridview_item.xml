@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/bg_white2gray_sel">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/gridview_img"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            fresco:actualImageScaleType="focusCrop" />
+
+        <ImageView
+            android:id="@+id/img_takephoto"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/takephoto"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/item_check"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:background="@drawable/is_check"
+            android:button="@null"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

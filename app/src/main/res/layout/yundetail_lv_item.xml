@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="123456"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+        <GridLayout
+            android:id="@+id/yunnum_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_playcount"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:columnCount="4"
+            android:rowCount="2">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="123456"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="123456"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="123456"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="123456"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="123456"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="123456"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="123456"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_height="40dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:text="123456"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+
+        </GridLayout>
+
+        <RelativeLayout
+            android:id="@+id/moreyunnum_rl"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/yunnum_gv"
+            android:background="@drawable/bg_white2gray_sel">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dddddd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="查看更多>>>"
+                android:textColor="#888888"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DEDEDE">
+
+    <RelativeLayout
+        android:id="@+id/yun_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar_bg_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/yun_number_go_back"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/previous_pre"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/goods_details_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="选择云次"
+            android:textColor="#555555"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_yunnun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/yun_rl"
+        android:scrollbars="none"/>
+</RelativeLayout>

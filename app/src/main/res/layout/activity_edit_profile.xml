@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/edit_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar_bg_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_go_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/button_left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="编辑个人资料"
+            android:textColor="#555555"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90eeeeee"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/editpprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#dddddd"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_headimg"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="头像"
+                    android:textColor="#888888"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_raw1"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_arrows"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_userhead"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@id/btn_raw1"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:roundAsCircle="true"
+                    fresco:roundingBorderColor="#ff7700"
+                    fresco:roundingBorderWidth="2dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dddddd"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#dddddd"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="昵称"
+                    android:textColor="#888888"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_raw2"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_arrows"/>
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@id/btn_raw2"
+                    android:text="AzusaL"
+                    android:textColor="#666666"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dddddd"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#dddddd"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_sex"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="性别"
+                    android:textColor="#888888"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_raw3"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_arrows"/>
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@id/btn_raw3"
+                    android:text="男"
+                    android:textColor="#666666"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dddddd"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="生日"
+                    android:textColor="#888888"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_raw4"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_arrows"/>
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@id/btn_raw4"
+                    android:text="2016-01-01"
+                    android:textColor="#666666"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dddddd"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_qq"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="QQ"
+                    android:textColor="#888888"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_raw5"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_arrows"/>
+
+                <TextView
+                    android:id="@+id/tv_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@id/btn_raw5"
+                    android:text="1042284148"
+                    android:textColor="#666666"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dddddd"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#dddddd"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_signname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <TextView
+                    android:id="@+id/signname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="个性签名"
+                    android:textColor="#888888"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/btn_raw6"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_arrows"/>
+
+                <TextView
+                    android:id="@+id/tv_signname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/btn_raw6"
+                    android:layout_toRightOf="@id/signname"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="个性签名？"
+                    android:textColor="#666666"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dddddd"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

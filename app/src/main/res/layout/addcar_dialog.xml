@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_shape">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="参与人次"
+            android:textColor="#555555"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_remaincount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="剩余11人次"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_decrease"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/joincount_btn"
+            android:layout_toLeftOf="@+id/joincount_btn"
+            android:layout_toStartOf="@+id/joincount_btn"
+            android:background="@drawable/btn_decrease_sel" />
+
+
+        <RelativeLayout
+            android:id="@+id/joincount_btn"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_dialog_remaincount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/product_shape">
+
+            <EditText
+                android:id="@+id/dialog_edt_count"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="123"
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_increase"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/joincount_btn"
+            android:layout_toEndOf="@+id/joincount_btn"
+            android:layout_toRightOf="@+id/joincount_btn"
+            android:background="@drawable/btn_increase_sel" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/joincount_btn"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/dialog_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_strokwhite2gray_sel"
+                android:text="取消"
+                android:textColor="#a9a9a9"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/dialog_surebtn"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_envy"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

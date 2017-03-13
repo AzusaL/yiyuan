@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_shape">
+
+    <RelativeLayout
+        android:id="@+id/diyihang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/boda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拨打"
+            android:textColor="#a9a9a9"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dianhua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/boda"
+            android:text="1008611"
+            android:textColor="#fd6601"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lianxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dianhua"
+            android:text="联系客服？"
+            android:textColor="#a9a9a9"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/shijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diyihang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="(9:00-12:00)"
+        android:textColor="#a9a9a9"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shijian"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_cancal"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg_strokwhite2gray_sel"
+            android:text="取消"
+            android:textColor="#a9a9a9"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/dialog_bohao"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_envy"
+            android:text="拨号"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>
